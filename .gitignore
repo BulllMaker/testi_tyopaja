@@ -1,4 +1,5 @@
 .site-stage/
 site-archive.tar.gz
 site-archive.zip
+.openai/hosting.json
 
