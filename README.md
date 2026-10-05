@@ -6,5 +6,5 @@ Sovellus käyttää Sites-palvelun kirjautumista, D1-tietokantaa ja yksityistä 
 
 ## Kehitys
 
-Projektissa käytetään Vinext-aloituspohjaa. Riippuvuuksien asennuksen jälkeen sovellus käynnistyy komennolla `npm run dev` ja rakentuu komennolla `npm run build`. Tietokantamuutokset ovat `drizzle/`-hakemistossa. Tuotannon Sites-sidonnat ovat erillisessä `.openai/hosting.json`-asetuksessa, jota ei viedä julkiseen GitHub-repositorioon. Repositorion `.openai/hosting.example.json` näyttää tarvittavat sidonnat ilman julkaisun tunnistetta.
+Projektissa käytetään Vinext-aloituspohjaa. Riippuvuudet asennetaan komennolla `npm ci`. GitHubista kloonattua projektia varten kopioi `.openai/hosting.example.json` tiedostoksi `.openai/hosting.json` ennen rakennusta. Sen jälkeen sovellus käynnistyy komennolla `npm run dev` ja rakentuu komennolla `npm run build`. Tietokantamuutokset ovat `drizzle/`-hakemistossa. Tuotannon Sites-asetuksessa on lisäksi julkaisun tunniste, jota ei viedä julkiseen GitHub-repositorioon.
 
