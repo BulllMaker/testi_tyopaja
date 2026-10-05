@@ -71,7 +71,7 @@ export default function Workspace() {
   const approved = items.filter(item => item.status === "approved").length;
   return <div className="app-shell">
     <aside className="rail">
-      <div className="brand">Yhet<span>Puheet!</span></div>
+      <div className="brand" aria-label="YhetPuheet media"><strong>YHET<br />PUHEET</strong><small>media</small></div>
       <div className="rail-label">YHTEINEN TYÖTILA</div>
       <div className="rail-active">Hyväksyntäpaketit</div>
       <div className="rail-footer">Käsikirjoitukset ja videot<br />samassa paketissa.</div>
