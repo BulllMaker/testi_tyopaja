@@ -1,14 +1,10 @@
 # YhetPuheet-työtila
 
-YhetPuheet Median jatkuvan sisällöntuotannon käyttöliittymän ensimmäinen malli. Työtila näyttää kuukauden etenemisen, sisältöjen vaiheet, hyväksynnät ja yhteistyön perustiedot.
+YhetPuheet Median asiakkaan hyväksyntätyötila. Tiimi tallentaa yhden PDF-paketin, jossa ovat kuukauden kaikkien videoiden käsikirjoitukset ja katselulinkit. Asiakas avaa paketin ja hyväksyy sen kokonaisuutena. Hyväksynnästä tallentuvat käyttäjä ja ajankohta.
 
-Sovellus on tällä hetkellä staattinen esikatselu. Esimerkkisisältöjen tilamuutokset tallentuvat vain käyttäjän omaan selaimeen. Siinä ei ole vielä asiakkaiden käyttäjätunnuksia, yhteistä tietokantaa eikä oikeita asiakastietoja.
+Sovellus käyttää Sites-palvelun kirjautumista, D1-tietokantaa ja yksityistä R2-tiedostotallennusta. Paketti näkyy vain sitä vastaavan sähköpostiosoitteen käyttäjälle sekä työtilan ylläpitäjälle. Asiakkaalle on annettava pääsy yksityiseen Siteen erikseen ennen kuin hän voi kirjautua.
 
-## Paikallinen käyttö
+## Kehitys
 
-Avaa `dist/index.html` selaimessa. Sivusto ei vaadi erillistä asennusta tai rakennusvaihetta.
-
-## Jatkokehitys
-
-Ennen oikeaa asiakaskäyttöä tarvitaan vähintään asiakaskohtaiset käyttöoikeudet, yhteinen tallennus sisältöjen tiloille ja hyväksynnöille sekä tapa hallita oikeita sisältöjä.
+Projektissa käytetään Vinext-aloituspohjaa. Riippuvuuksien asennuksen jälkeen sovellus käynnistyy komennolla `npm run dev` ja rakentuu komennolla `npm run build`. Tietokantamuutokset ovat `drizzle/`-hakemistossa. Tuotannon Sites-sidonnat ovat erillisessä `.openai/hosting.json`-asetuksessa, jota ei viedä julkiseen GitHub-repositorioon. Repositorion `.openai/hosting.example.json` näyttää tarvittavat sidonnat ilman julkaisun tunnistetta.
 

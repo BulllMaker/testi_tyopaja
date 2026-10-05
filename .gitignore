@@ -2,4 +2,10 @@
 site-archive.tar.gz
 site-archive.zip
 .openai/hosting.json
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+*.tsbuildinfo
 
