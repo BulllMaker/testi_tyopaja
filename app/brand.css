@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+
+:root{color:#17191a;background:#7cb9cb;--ink:#17191a;--blue:#1685a5;--muted:#365562;--display:"Michroma",Arial,Helvetica,sans-serif}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #111;outline-offset:3px}
+.app-shell{background:linear-gradient(125deg,#a8cdd8 0%,#76b9cc 48%,#379ebd 100%);grid-template-columns:252px minmax(0,1fr)}
+.rail{background:linear-gradient(160deg,#8fc1cf 0%,#3b9fba 100%);border-right:1px solid #286f87;color:var(--ink)}
+.brand{display:flex;flex-direction:column;align-items:flex-end;width:max-content;max-width:100%;color:#090b0c;transform:skewX(-8deg);font-weight:normal;letter-spacing:0}
+.brand strong{font-family:Impact,"Arial Black",Arial,sans-serif;font-size:1.7rem;font-style:italic;font-weight:900;line-height:.91;letter-spacing:-.07em}
+.brand small{font-size:.78rem;font-style:italic;font-weight:300;letter-spacing:.02em;margin-top:1px}
+.rail-label{color:#183b48;margin-top:58px}.rail-active{background:var(--ink);color:#fff;border-radius:0;box-shadow:5px 5px 0 #175974;font-size:.9rem}.rail-footer{color:#1d4857}
+.main{padding-top:44px}.eyebrow{color:#125a73}
+.top h1,.section-title h2,.detail h3,.empty h3,.form-head h3{font-family:var(--display);font-weight:800}
+.top h1{font-size:clamp(1.5rem,2.5vw,2.5rem);letter-spacing:-.055em;line-height:1.3;margin:15px 0 12px}.lead{color:#2a4f5e}
+.identity{background:#c7e0e6;border-color:#78aebb;border-radius:0;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.metrics{gap:16px;margin:38px 0 42px}.metrics>div{background:#eef8fa;border-color:#5c94a3;border-radius:0;box-shadow:5px 5px 0 #316c7d;padding:21px 23px}.metrics span{color:#355a67}.metrics strong{font-family:var(--display);font-size:2rem;letter-spacing:-.04em;line-height:1.3;margin-top:12px}
+.section-title{margin-bottom:20px}.section-title h2{font-size:clamp(1.05rem,1.5vw,1.32rem);line-height:1.45;letter-spacing:-.035em}
+.primary{background:var(--blue);border-radius:0;box-shadow:5px 5px 0 #20536b;transition:background .15s,transform .15s,box-shadow .15s}.primary:hover{background:#0c617e;transform:translate(2px,2px);box-shadow:3px 3px 0 #20536b}
+.card{background:#f2f9fa;border-color:#5c94a3;border-radius:0;box-shadow:6px 6px 0 #316c7d}
+.loading,.empty p{color:var(--muted)}.empty{padding:60px 20px}.empty-icon{background:var(--blue);color:#fff;border-radius:0;font-family:var(--display);font-size:1.15rem;box-shadow:4px 4px 0 #20536b;margin-bottom:20px}.empty h3{font-size:1.05rem;line-height:1.5;margin-bottom:12px}
+.workspace-grid{gap:22px}.package-list{gap:13px}.package-row{background:#eef8fa;border-color:#5c94a3;border-radius:0;color:var(--ink);box-shadow:4px 4px 0 #316c7d}.package-row.chosen{border-color:#111;background:#fff;box-shadow:5px 5px 0 #111}.row-month,.row-bottom,.detail-lead,.file-link small,.facts dt,.form-head p,.fields small{color:var(--muted)}
+.badge{border-radius:0;background:#fce9ab;color:#584512}.badge.approved{background:#c5e8df;color:#155749}.detail h3{font-size:clamp(1.15rem,2vw,1.55rem);line-height:1.4}
+.file-link{background:#e2f2f5;border-color:#6c9ca9;border-radius:0;color:var(--ink)}.file-link:hover{border-color:#111;background:#fff}.file-mark{background:var(--blue);color:#fff;border-radius:0}.facts{border-color:#9cbec7}
+.approve-box{background:#d8edf2;border-left:4px solid var(--blue);border-radius:0}.approved-box{background:#c5e8df;color:#155749;border-radius:0}.fields input{border-color:#6e9fad;border-radius:0;color:var(--ink)}.error{border-radius:0}
+@media(max-width:900px){.app-shell{grid-template-columns:1fr;grid-template-rows:auto 1fr}.rail{padding:17px 22px;border-right:0;border-bottom:1px solid #286f87;flex-direction:row;align-items:center;justify-content:space-between;gap:15px}.brand{padding:0}.brand strong{font-size:1.28rem}.brand small{font-size:.65rem}.rail-active{font-size:.8rem;padding:10px 11px;margin:0}.main{padding:30px 22px 65px;margin:0 auto}}
+@media(max-width:650px){.top h1{font-size:1.48rem}.metrics{gap:9px;margin:27px 0 37px}.metrics>div{padding:13px;box-shadow:3px 3px 0 #316c7d}.metrics span{font-size:.7rem;min-height:2.4em}.metrics strong{font-size:1.32rem}.section-title .primary{max-width:48%}}
+
